@@ -1,12 +1,12 @@
-import Image from 'next/image'
-import Link from 'next/link'
-import { Suspense } from 'react'
-import Table from '@/components/table'
-import TablePlaceholder from '@/components/table-placeholder'
-import ExpandingArrow from '@/components/expanding-arrow'
+import Image from "next/image";
+import Link from "next/link";
+import { Suspense } from "react";
+import Table from "@/components/table";
+import TablePlaceholder from "@/components/table-placeholder";
+import ExpandingArrow from "@/components/expanding-arrow";
 
-export const preferredRegion = 'home'
-export const dynamic = 'force-dynamic'
+export const preferredRegion = "home";
+export const dynamic = "force-dynamic";
 
 export default function Home() {
   return (
@@ -30,15 +30,15 @@ export default function Home() {
           className="font-medium underline underline-offset-4 hover:text-black transition-colors"
         >
           Vercel Postgres
-        </Link>{' '}
-        demo with{' '}
+        </Link>{" "}
+        demo with{" "}
         <Link
           href="https://kysely.dev/"
           className="font-medium underline underline-offset-4 hover:text-black transition-colors"
         >
           Kysely
-        </Link>{' '}
-        as the ORM. <br /> Built with{' '}
+        </Link>{" "}
+        as the ORM. <br /> Built with{" "}
         <Link
           href="https://nextjs.org/docs"
           className="font-medium underline underline-offset-4 hover:text-black transition-colors"
@@ -94,5 +94,5 @@ export default function Home() {
         </Link>
       </div>
     </main>
-  )
+  );
 }
